@@ -2,7 +2,7 @@ import './style.css';
 import * as THREE from 'three';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { Howl } from 'howler';
+
 
 gsap.registerPlugin(ScrollTrigger);
 
