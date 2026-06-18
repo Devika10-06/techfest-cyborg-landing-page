@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Techfest 2025 — IIT Bombay</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Exo+2:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav__logo">
+      <span class="nav__bracket">[</span>TECHFEST<span class="nav__year">2025</span><span class="nav__bracket">]</span>
+    </div>
+    <ul class="nav__links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#events">Events</a></li>
+      <li><a href="#ca">CA Program</a></li>
+      <li><a href="#footer">Contact</a></li>
+    </ul>
+    <a href="#hero" class="btn btn--nav">Register</a>
+    <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#events" class="mobile-link">Events</a></li>
+      <li><a href="#ca" class="mobile-link">CA Program</a></li>
+      <li><a href="#footer" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <canvas id="heroCanvas" class="hero__canvas"></canvas>
+    <div class="hero__scanlines"></div>
+    <div class="hero__hud hero__hud--tl"></div>
+    <div class="hero__hud hero__hud--tr"></div>
+    <div class="hero__hud hero__hud--bl"></div>
+    <div class="hero__hud hero__hud--br"></div>
+
+    <div class="hero__content">
+      <div class="hero__badge">
+        <span class="hero__badge-pulse"></span>
+        ASIA'S LARGEST SCIENCE &amp; TECHNOLOGY FESTIVAL
+      </div>
+
+      <h1 class="hero__heading glitch" data-text="TECHFEST 2025">TECHFEST 2025</h1>
+      <div class="hero__subheading glitch-sub" data-text="WHERE HUMANS MEET MACHINES">WHERE HUMANS MEET MACHINES</div>
+
+      <div class="hero__stats">
+        <div class="hero__stat">
+          <div class="hero__stat-val"><span class="counter" data-target="180000" data-suffix="+">0</span></div>
+          <div class="hero__stat-lbl">Footfall</div>
+        </div>
+        <div class="hero__stat-sep"></div>
+        <div class="hero__stat">
+          <div class="hero__stat-val"><span class="counter" data-target="300" data-suffix="+">0</span></div>
+          <div class="hero__stat-lbl">Events</div>
+        </div>
+        <div class="hero__stat-sep"></div>
+        <div class="hero__stat">
+          <div class="hero__stat-val">30<sup>th</sup></div>
+          <div class="hero__stat-lbl">Edition</div>
+        </div>
+      </div>
+
+      <div class="hero__cta-row">
+        <a href="#" class="btn btn--primary btn--glow">
+          <span class="btn__text">Register Now</span>
+          <span class="btn__glare"></span>
+        </a>
+        <a href="#about" class="btn btn--ghost">Explore &darr;</a>
+      </div>
+
+      <div class="hero__date-badge">
+        <span class="hero__date-icon">&#9670;</span>
+        December 2025 &nbsp;&middot;&nbsp; IIT Bombay, Mumbai
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <span class="scroll-indicator__label">SCROLL</span>
+      <div class="scroll-indicator__line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// ABOUT</span>
+        <h2 class="section-title">The <span class="text-cyan">Techfest</span> Legacy</h2>
+      </div>
+
+      <div class="about__layout">
+        <div class="about__copy reveal">
+          <p class="about__lead">
+            Techfest is the annual Science &amp; Technology Festival of IIT Bombay —
+            the premier institution of technological education and research in India.
+          </p>
+          <p class="about__body">
+            Now in its <strong class="text-cyan">30th edition</strong>, Techfest has grown into
+            Asia's largest tech festival, drawing innovators, engineers, scientists, and visionaries
+            from across the globe. With over <strong class="text-purple">1,80,000+ footfall</strong>
+            and <strong class="text-cyan">300+ events</strong> spanning robotics, AI, space
+            technology, and more — it is the definitive convergence of human ingenuity and
+            machine intelligence.
+          </p>
+          <ul class="about__list">
+            <li><span class="list-dot"></span>International participants from 150+ countries</li>
+            <li><span class="list-dot"></span>Nobel Laureates &amp; Global Industry Leaders</li>
+            <li><span class="list-dot"></span>Prize pool worth ₹1 Crore+</li>
+            <li><span class="list-dot"></span>Live demonstrations &amp; exhibits</li>
+          </ul>
+        </div>
+
+        <div class="about__hud reveal">
+          <div class="hud-panel">
+            <div class="hud-panel__corner hud-panel__corner--tl"></div>
+            <div class="hud-panel__corner hud-panel__corner--tr"></div>
+            <div class="hud-panel__corner hud-panel__corner--bl"></div>
+            <div class="hud-panel__corner hud-panel__corner--br"></div>
+            <div class="hud-panel__tag">SYS_METRICS</div>
+            <div class="hud-bars">
+              <div class="hud-bar">
+                <div class="hud-bar__track"><div class="hud-bar__fill hud-bar__fill--cyan" data-width="92"></div></div>
+                <span class="hud-bar__label">Global Reach</span>
+                <span class="hud-bar__val text-cyan">92%</span>
+              </div>
+              <div class="hud-bar">
+                <div class="hud-bar__track"><div class="hud-bar__fill hud-bar__fill--purple" data-width="87"></div></div>
+                <span class="hud-bar__label">Participation</span>
+                <span class="hud-bar__val text-purple">87%</span>
+              </div>
+              <div class="hud-bar">
+                <div class="hud-bar__track"><div class="hud-bar__fill hud-bar__fill--cyan" data-width="98"></div></div>
+                <span class="hud-bar__label">Innovation Index</span>
+                <span class="hud-bar__val text-cyan">98%</span>
+              </div>
+              <div class="hud-bar">
+                <div class="hud-bar__track"><div class="hud-bar__fill hud-bar__fill--purple" data-width="75"></div></div>
+                <span class="hud-bar__label">Industry Connect</span>
+                <span class="hud-bar__val text-purple">75%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EVENTS -->
+  <section class="events section" id="events">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// EVENTS</span>
+        <h2 class="section-title">Core <span class="text-cyan">Competitions</span></h2>
+      </div>
+
+      <div class="events__grid">
+
+        <div class="event-card reveal" data-delay="0">
+          <div class="event-card__accent"></div>
+          <div class="event-card__icon">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="20" y="8" width="24" height="14" rx="2" stroke="currentColor" stroke-width="2"/>
+              <rect x="8" y="28" width="14" height="10" rx="2" stroke="currentColor" stroke-width="2"/>
+              <rect x="42" y="28" width="14" height="10" rx="2" stroke="currentColor" stroke-width="2"/>
+              <rect x="22" y="44" width="20" height="12" rx="2" stroke="currentColor" stroke-width="2"/>
+              <line x1="32" y1="22" x2="32" y2="28" stroke="currentColor" stroke-width="2"/>
+              <line x1="15" y1="33" x2="22" y2="33" stroke="currentColor" stroke-width="2"/>
+              <line x1="42" y1="33" x2="49" y2="33" stroke="currentColor" stroke-width="2"/>
+              <line x1="32" y1="38" x2="32" y2="44" stroke="currentColor" stroke-width="2"/>
+              <circle cx="32" cy="33" r="4" fill="currentColor" opacity="0.35"/>
+            </svg>
+          </div>
+          <div class="event-card__cat">CATEGORY_01</div>
+          <h3 class="event-card__title">Robotics</h3>
+          <p class="event-card__desc">Design, build and battle autonomous robots in arenas engineered for chaos. From line-followers to full combat bots — test your limits.</p>
+          <div class="event-card__meta">
+            <span>&#8377;2,00,000 Prize</span>
+            <span>50+ Teams</span>
+          </div>
+          <a href="#" class="event-card__link">Explore Event <span class="arrow">&#8594;</span></a>
+        </div>
+
+        <div class="event-card event-card--purple reveal" data-delay="100">
+          <div class="event-card__accent event-card__accent--purple"></div>
+          <div class="event-card__icon">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="32" cy="22" r="10" stroke="currentColor" stroke-width="2"/>
+              <path d="M16 48c0-8.837 7.163-16 16-16s16 7.163 16 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M44 16l4-4M20 16l-4-4M32 10V4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="32" cy="22" r="4" fill="currentColor" opacity="0.35"/>
+              <rect x="24" y="48" width="16" height="8" rx="1" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </div>
+          <div class="event-card__cat">CATEGORY_02</div>
+          <h3 class="event-card__title">AI Competitions</h3>
+          <p class="event-card__desc">Pitch intelligent systems, train models, and solve real-world challenges using machine learning, computer vision, and neural networks.</p>
+          <div class="event-card__meta">
+            <span>&#8377;3,00,000 Prize</span>
+            <span>100+ Teams</span>
+          </div>
+          <a href="#" class="event-card__link">Explore Event <span class="arrow">&#8594;</span></a>
+        </div>
+
+        <div class="event-card reveal" data-delay="200">
+          <div class="event-card__accent"></div>
+          <div class="event-card__icon">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <polygon points="32,8 52,20 52,44 32,56 12,44 12,20" stroke="currentColor" stroke-width="2"/>
+              <polygon points="32,18 44,25 44,39 32,46 20,39 20,25" stroke="currentColor" stroke-width="1.5" opacity="0.4"/>
+              <circle cx="32" cy="32" r="6" fill="currentColor" opacity="0.35"/>
+              <line x1="32" y1="8" x2="32" y2="18" stroke="currentColor" stroke-width="2"/>
+              <line x1="52" y1="20" x2="44" y2="25" stroke="currentColor" stroke-width="2"/>
+              <line x1="52" y1="44" x2="44" y2="39" stroke="currentColor" stroke-width="2"/>
+              <line x1="32" y1="56" x2="32" y2="46" stroke="currentColor" stroke-width="2"/>
+              <line x1="12" y1="44" x2="20" y2="39" stroke="currentColor" stroke-width="2"/>
+              <line x1="12" y1="20" x2="20" y2="25" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </div>
+          <div class="event-card__cat">CATEGORY_03</div>
+          <h3 class="event-card__title">International Robowars</h3>
+          <p class="event-card__desc">The most anticipated combat robotics tournament in Asia. Armored machines clash in head-to-head destruction — only the strongest survive.</p>
+          <div class="event-card__meta">
+            <span>&#8377;5,00,000 Prize</span>
+            <span>30+ Countries</span>
+          </div>
+          <a href="#" class="event-card__link">Explore Event <span class="arrow">&#8594;</span></a>
+        </div>
+
+        <div class="event-card event-card--purple reveal" data-delay="300">
+          <div class="event-card__accent event-card__accent--purple"></div>
+          <div class="event-card__icon">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="12" y="16" width="40" height="28" rx="3" stroke="currentColor" stroke-width="2"/>
+              <rect x="18" y="22" width="28" height="16" rx="1" stroke="currentColor" stroke-width="1.5" opacity="0.5"/>
+              <line x1="24" y1="48" x2="40" y2="48" stroke="currentColor" stroke-width="2"/>
+              <line x1="28" y1="44" x2="28" y2="48" stroke="currentColor" stroke-width="2"/>
+              <line x1="36" y1="44" x2="36" y2="48" stroke="currentColor" stroke-width="2"/>
+              <circle cx="24" cy="30" r="2" fill="currentColor" opacity="0.8"/>
+              <circle cx="32" cy="30" r="2" fill="currentColor" opacity="0.8"/>
+              <circle cx="40" cy="30" r="2" fill="currentColor" opacity="0.8"/>
+            </svg>
+          </div>
+          <div class="event-card__cat">CATEGORY_04</div>
+          <h3 class="event-card__title">Workshops</h3>
+          <p class="event-card__desc">Hands-on sessions with industry experts covering quantum computing, drone programming, embedded systems, and cutting-edge tech domains.</p>
+          <div class="event-card__meta">
+            <span>Expert Mentors</span>
+            <span>200+ Sessions</span>
+          </div>
+          <a href="#" class="event-card__link">Explore Event <span class="arrow">&#8594;</span></a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CA PROGRAM -->
+  <section class="ca section" id="ca">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// CA PROGRAM</span>
+        <h2 class="section-title">College <span class="text-purple">Ambassador</span> Program</h2>
+      </div>
+
+      <div class="ca__layout">
+        <div class="ca__main reveal">
+          <div class="ca__card">
+            <div class="ca__card-header">
+              <div class="ca__card-icon">
+                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <circle cx="24" cy="18" r="8" stroke="currentColor" stroke-width="2"/>
+                  <path d="M10 38c0-7.732 6.268-14 14-14s14 6.268 14 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M36 14l3-3M12 14l-3-3M24 8V4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div>
+                <div class="ca__card-tag">MISSION_BRIEFING</div>
+                <h3 class="ca__card-title">Become an Ambassador</h3>
+              </div>
+            </div>
+            <p class="ca__card-body">
+              Join an elite network of student representatives from colleges across India and
+              the world. As a Techfest College Ambassador, you become the bridge between your
+              campus and Asia's biggest tech festival.
+            </p>
+            <ul class="ca__perks">
+              <li><span class="ca__perk-dot"></span>Certificate of Achievement from IIT Bombay</li>
+              <li><span class="ca__perk-dot"></span>Letter of Recommendation for top performers</li>
+              <li><span class="ca__perk-dot"></span>Free entry + VIP access at Techfest</li>
+              <li><span class="ca__perk-dot"></span>Exclusive merchandise &amp; goodies</li>
+              <li><span class="ca__perk-dot"></span>Cash prizes &amp; performance incentives</li>
+            </ul>
+            <a href="#" class="btn btn--primary btn--glow ca__cta">
+              <span class="btn__text">Apply Now</span>
+              <span class="btn__glare"></span>
+            </a>
+          </div>
+        </div>
+
+        <div class="ca__stats reveal">
+          <div class="ca__stat">
+            <div class="ca__stat-num text-cyan">5000<span class="ca__stat-plus">+</span></div>
+            <div class="ca__stat-lbl">Active Ambassadors</div>
+          </div>
+          <div class="ca__stat">
+            <div class="ca__stat-num text-purple">600<span class="ca__stat-plus">+</span></div>
+            <div class="ca__stat-lbl">Partner Colleges</div>
+          </div>
+          <div class="ca__stat">
+            <div class="ca__stat-num text-cyan">40<span class="ca__stat-plus">+</span></div>
+            <div class="ca__stat-lbl">States Covered</div>
+          </div>
+          <div class="ca__stat">
+            <div class="ca__stat-num text-purple">15<span class="ca__stat-plus">+</span></div>
+            <div class="ca__stat-lbl">Countries</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="footer">
+    <div class="footer__circuit-overlay"></div>
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <span class="nav__bracket">[</span>TECHFEST<span class="nav__year">2025</span><span class="nav__bracket">]</span>
+          </div>
+          <p class="footer__tagline">Asia's Largest Science &amp; Technology Festival</p>
+          <p class="footer__iitb">A production of <strong class="text-cyan">IIT Bombay</strong></p>
+        </div>
+
+        <div class="footer__nav-group">
+          <h4 class="footer__nav-title">Navigate</h4>
+          <ul class="footer__nav-list">
+            <li><a href="#about">About Techfest</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#ca">CA Program</a></li>
+            <li><a href="#">Sponsors</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__nav-group">
+          <h4 class="footer__nav-title">Events</h4>
+          <ul class="footer__nav-list">
+            <li><a href="#">Robotics</a></li>
+            <li><a href="#">AI Competitions</a></li>
+            <li><a href="#">Robowars</a></li>
+            <li><a href="#">Workshops</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__social-group">
+          <h4 class="footer__nav-title">Connect</h4>
+          <div class="footer__socials">
+            <a href="#" class="footer__social-btn" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="2"/>
+                <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/>
+                <circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>
+              </svg>
+            </a>
+            <a href="#" class="footer__social-btn" aria-label="Twitter/X">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 4l16 16M20 4L4 20" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+              </svg>
+            </a>
+            <a href="#" class="footer__social-btn" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="#" class="footer__social-btn" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <rect x="2" y="9" width="4" height="12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </a>
+            <a href="#" class="footer__social-btn" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 1.96A29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.96A29 29 0 0023 12a29 29 0 00-.46-5.58z" stroke="currentColor" stroke-width="2"/>
+                <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+          <a href="mailto:info@techfest.org" class="footer__email">info@techfest.org</a>
+        </div>
+      </div>
+
+      <div class="footer__divider"></div>
+      <div class="footer__bottom">
+        <span>&copy; 2025 Techfest, IIT Bombay. All rights reserved.</span>
+        <span class="footer__status">
+          <span class="footer__status-dot"></span>
+          SYSTEM ONLINE
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
